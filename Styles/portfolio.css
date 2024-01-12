@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header & navigation styles*/
+.header {
+    padding-top: 2%;
+    background: #FFF8F3;
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 226px;
+    margin-right: 265px;
+}
+
+.text-primary {
+    color: rgba(253, 110, 10, 1);
+}
+
+.all-ancor {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background: #FFF8F3;
+}
+
+.btn-primary:hover {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background-color: #fd6e0a;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+/* banner styles */
+.banner {
+    margin-left: 230px;
+    align-items: center;
+    display: flex;
+}
+
+.banner-titel {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.banner-sub-titel {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* main section */
+.main {
+    max-width: 1440px;
+    margin: 0 230px;
+}
+
+/* about section style */
+.about {
+    /* margin -top: 130px;
+    margin-bottom: 130px; */
+    margin: 130px 0 130px;
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.section-titel {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.section-description {
+    padding: 30px 116px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+
+.about-info-titel {
+    color: #757575;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about-info-description {
+    color: #474747;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* what i do section? */
+
+.what-do-titel {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.what-do-description {
+    color: var(--Dark-03, #757575);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skills {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    /* padding: 30px 30px 30px; */
+    padding: 30px;
+    margin-bottom: 130px;
+}
+
+.skills-title {
+    font-size: 17px;
+    font-weight: bold;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    margin: 10px 0;
+}
+
+.skills-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+}
+
+/* resume style */
+.resume-container{
+    display: flex;
+    gap: 70px;
+    /* justify-content:flex-start; */
+    justify-content: space-between;
+}
+.resume-title{
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.sub-title{
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #757575;
+}
+.description{
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.resume-btn{
+    text-align: center;
+    margin-bottom: 113px;
+}
+/* footer  style */
+
+.connect{
+    display: flex;
+    gap: 50px;
+    background-color: #FFF8F3;
+    padding: 50px 110px;
+}
+.connect .section-titel{
+    text-align: left;
+    margin-bottom: 15px;
+}
+.connect a{
+    text-decoration: none;
+}
+
+.connect input[type="text"], input[type="email"], textarea{
+    margin-bottom: 14px;
+    border: 0;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.connect-description{
+    margin-bottom: 15px;
+}
+
+/* responsive website */
+.hide{
+    display: none;
+}
+/*Mobile devices */
+@media screen and (max-width:576px) {
+    .main{
+        margin: 0 20px;
+    }
+    .skills-container,
+    .resume-container,
+    .connect,
+    .about-info{
+        flex-direction: column;
+    }
+    .skills{
+        margin-bottom: 20px;
+    }
+    .connect{
+        padding: 20px;
+    }
+    .connect input[type="text"], input[type="email"], textarea{
+        width: 90%;
+    }
+    .section-description {
+        padding: 30px;
+    }
+    .about-info{
+        gap: 30px;
+    }
+}
