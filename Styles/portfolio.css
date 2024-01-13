@@ -254,6 +254,9 @@ nav li {
     .about-info{
         flex-direction: column;
     }
+    .about{
+        margin: 50px 0;
+    }
     .skills{
         margin-bottom: 20px;
     }
