@@ -281,6 +281,8 @@ nav li {
     }
     .banner img{
         width: 100%;
+        background-image: url("../images/header_bg.png");
+        background-position: center;
     }
     .header{
         background-image: none;
