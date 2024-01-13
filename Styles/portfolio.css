@@ -269,4 +269,23 @@ nav li {
     .about-info{
         gap: 30px;
     }
+    .banner{
+        flex-direction: column;
+    }
+    nav {
+        margin:0px;
+        align-items: center;
+    }
+    nav li {
+        margin-left: 2px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner {
+        margin-left: 30px;
+    }
 }
