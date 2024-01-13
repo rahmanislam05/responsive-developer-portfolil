@@ -28,7 +28,9 @@ nav {
     color: black;
     font-weight: bold;
 }
-
+.btn-primary>a{
+    gap: 20px;
+}
 .btn-primary {
     text-decoration: none;
     color: black;
